@@ -13,9 +13,9 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 			},
 	
 	tags = "@demo",
-	features = "src/test/resources/com/maximus/features",
-	glue = "src/test/java/com/maximus/step_definitions",
-	dryRun= true
+	features = "src/test/resources/",//com/maximus/features",
+	//glue = "src/test/java/com/maximus/step_definitions",
+	dryRun= false
 	)
 	//features="src/test/resources/", dryRun = false, tags="@smoke")
 
