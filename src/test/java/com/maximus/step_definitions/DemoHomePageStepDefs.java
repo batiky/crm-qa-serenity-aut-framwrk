@@ -13,7 +13,6 @@ public class DemoHomePageStepDefs {
 	@Steps
 	DemoHomePageSteps homePage;
 	DemoHomePage home;
-	private String keyword;
 	
 	
 	@Given("^I am on amazon home page$")
@@ -23,7 +22,6 @@ public class DemoHomePageStepDefs {
 
 	@Given("^I search for (.*)$")
 	public void i_search_for(String keyword) throws Exception {
-	    this.keyword= keyword;
 		homePage.searchFor(keyword);
 	}
 

@@ -1,4 +1,4 @@
- <!-- ?xml version="1.0" encoding="UTF-8"? -->
+ <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -7,7 +7,7 @@
 	<artifactId>crm-qa-serenity-aut-framwrk</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	    <properties>
+    <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>1.9.7</serenity.version>
         <serenity.maven.version>1.9.3</serenity.maven.version>
@@ -99,9 +99,9 @@
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.18</version>
-                <configuration>
+                <configuration>	
                     <includes>
-                        <include>**/RunCukes.java</include>
+                        <include>**/CukeRunner.java</include>
                     </includes>
                     <reuseForks>true</reuseForks>
                     <!--<forkCount>2</forkCount>-->
@@ -121,6 +121,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
                 <configuration>
+                  <encoding>Cp1252</encoding>
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
@@ -164,3 +165,4 @@
         </plugins>
     </build>
 </project>
+

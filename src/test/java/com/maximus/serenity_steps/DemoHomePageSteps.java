@@ -10,7 +10,7 @@ import net.thucydides.core.steps.ScenarioSteps;
 public class DemoHomePageSteps extends ScenarioSteps {
 
 	public DemoHomePage homePage;
-	String keyword;
+	
 	@Step
 	public void open() {
 		homePage.open();
@@ -18,7 +18,6 @@ public class DemoHomePageSteps extends ScenarioSteps {
 	
 	@Step
 	public void searchFor(String keyword) {
-		this.keyword = keyword;
 		homePage.searchBox.sendKeys(keyword+ Keys.ENTER);
 		System.out.println("Searching for " + keyword);
 	}
